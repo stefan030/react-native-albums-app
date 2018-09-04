@@ -8,7 +8,8 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import Header from './src/components/header';
+import Header from './src/components/Header';
+import Albums from './src/components/AlbumList';
 
 
 
@@ -25,6 +26,7 @@ export default class App extends Component<Props> {
     return (
       <View>
         <Header headerText={'Albums'}/>
+        <Albums />
       </View>
     );
   }
