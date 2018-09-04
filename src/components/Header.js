@@ -8,8 +8,10 @@ export default class Header extends Component {
 
     render() {
         return(
-            <View style={styles.viewStyle}>
-                <Text style={styles.textStyle}>{this.props.headerText}</Text>
+            <View>
+                <View style={styles.viewStyle}>
+                    <Text style={styles.textStyle}>{this.props.headerText}</Text>
+                </View>
             </View>
         )
     }
@@ -21,7 +23,7 @@ let styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         height: 60,
-        paddingTop: 15,
+        paddingTop: 5,
         elevation: 6,
         position: 'relative'
     },
